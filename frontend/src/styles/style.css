@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6A9C89;
+    line-height: 1.8;
+}
+
+/* Main container for logo and content */
+.job, .job-list, .post-job, .mainpage-content, .profile, .edit-profile, .navbar, .login, .signup, .homepage, .forgot-password, .reset-password
+{
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.login, .signup {
+    margin: 10px auto;
+
+}
+
+.logo img {
+    width: 290px; /* Larger logo for desktop */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 52px; /* Increase font size for desktop */
+    font-weight: 700;
+    color: #f6f6f6;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.homepage .title h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: #FBF8EF;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.login, .signup, .forgot-password, .reset-password, .edit-profile  {
+    width: 400px; /* Increase width for desktop */
+    margin: 50px auto;
+    padding: 20px;
+    background-color:  #C1D8C3;
+    border: 5px solid #FBF8EF;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login h1, .signup h1, .forgot-password h1, .reset-password h1, .edit-profile h1, .job-list h1, .not-edit-profile-content h1 {
+    text-align: center;
+    font-size: 45px; /* Increase heading size */
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #333;
+}
+
+.login label, .signup label, .forgot-password label, .reset-password label, .edit-profile label, .post-job label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login input[type="email"],
+.login input[type="password"],
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="password"],
+.signup input[type="text"],
+.forgot-password input[type="email"],
+.reset-password input[type="password"],
+.edit-profile input[type="text"],
+.edit-profile input[type="email"],
+.edit-profile input[type="password"],
+.post-job input[type="text"],
+.post-job input[type="email"],
+.post-job input[type="password"]
+{
+    width: 100%;
+    padding: 10px; /* Increase padding for better readability */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Adjust font size for easier reading */
+    box-sizing: border-box;
+    max-width: 400px;
+}
+
+.login button, .signup button, .forgot-password button, .reset-password button, .edit-profile button, .profile button, .pagination button {
+    width: 100%;
+    padding: 12px; /* Slightly larger buttons */
+    background-color: #CD5C08;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    margin: 5px;
+}
+
+
+
+.job-buttons button {
+    width: 40%;
+    padding: 6px; /* Slightly larger buttons */
+    background-color: #CD5C08;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 100px;
+    margin: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    max-width: 90px;
+}
+
+.login button:hover, .signup button:hover, .forgot-password button:hover, .reset-password button:hover, .edit-profile button:hover, .profile button:hover, .pagination button:hover {
+    background-color: #5e8ca2;
+}
+
+
+.signup .StandaloneSearchBox input,  .edit-profile .StandaloneSearchBox input {
+    width: calc(100% - 16px); /* Adjust width to fit within container */
+    padding: 10px; /* More padding for desktop */
+}
+
+.homepage .login-signup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.forgot-password p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+/* Forms: Signup and Login */
+.signup, .login, .forgot-password, .reset-password, .edit-profile {
+    margin: 10px auto;
+}
+
+/* Navbar container */
+.navbar {
+    width: 100%;
+    background-color: #C1D8C3;
+    color: white;
+    padding: 15px 30px; /* More padding for a spacious navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    border-radius: 25px;
+}
+
+/* Navbar navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+/* Logo and App name */
+.navbar img {
+    width: 50px; /* Adjust logo size for desktop */
+    height: auto;
+    margin-right: 15px;
+}
+
+.navbar h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px; /* Larger font size for desktop */
+    margin: 0;
+    font-weight: 700;
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.navbar .logo img {
+    width: 150px;
+    margin-right: 0px;
+    box-shadow: #0000001a 8px 8px 10px; /* Add a subtle shadow */
+    border-radius: 0px;
+
+}
+
+.navbar .nav-profile img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 0px;
+
+
+}
+
+.profile h2 {
+    font-size: 18px; /* Slightly larger font size */
+    color: #555;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    line-height: 1.8;
+    text-shadow: 1px 1px 10px #000000;
+    
+
+}
+
+.navbar ul li a:hover {
+    background-color: #FBF8EF;
+    color: #ffffff;
+}
+
+.navbar .logout-btn {
+    background-color: #e53946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    line-height: 1.8;
+    border-radius: 25px;
+
+}
+
+.navbar .logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+.mainpage h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.mainpage h2 {
+    font-size: 50px;
+    color: #555;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.edit-profile,  .mainpage, .profile, .job-list{
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FBF8EF;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+
+
+}
+
+/* Job Container */
+.job-list .job-list-jobs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: flex-start;
+    justify-content: space-between; /* Optional: for better spacing */
+}
+
+
+.job-list .job-list-jobs .job {
+    flex: 1 1 calc(50px - 1rem); /* 30% width minus gap for consistent sizing */
+    max-width: calc(50% - 1rem); /* Prevent exceeding this size */
+    margin: 0.5rem;
+    box-sizing: border-box; /* Include padding/border in width */
+    box-shadow: #0000001a 0px 2px 4px; /* Add a subtle shadow */
+    background-color:  #C1D8C3;
+    border-radius: 25px;
+
+}
+
+.job-list .job h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.job-list .job h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job-list .job small {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.job-list .job p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Pagination Styles */
+.job-list .pagination {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+/* Map Styling */
+.job-list .map {
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+/* Active Page Styling */
+.pagination .active-page button{
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #21566e;
+    border-radius: 25px;
+
+}
+
+/* Post Job Page Styles */
+.post-job .posting{
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.post-job .not-posting button {
+    width: 100%;
+    max-width: 200px;
+    background-color: #258215;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    margin-bottom: 0px;
+
+}
+
+/* Button to Post a Job */
+.post-job button {
+    padding: 12px 20px;
+    background-color: #258215;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+
+}
+
+.post-job button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling when Posting a Job */
+.post-job form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.GMAMP-maps-pin-view { 
+    transition: all 0.15s linear; 
+    }
+
+.GMAMP-maps-pin-view:hover { 
+    transform: scale(1.5); 
+}
+
+.infowindow-container {
+    font-family: Arial, sans-serif; /* Use a clean, readable font */
+    font-size: 14px; /* Set a comfortable font size */
+    color: #333; /* Use a neutral text color */
+    padding: 10px; /* Add padding for spacing inside the container */
+}
+
+.infowindow-container h3 {
+    margin-bottom: 10px; /* Space between the heading and the list */
+    font-size: 14px; /* Slightly larger font for the heading */
+    color: #347aea; /* Match Google Maps marker color */
+}
+
+.infowindow-container ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove left padding */
+    margin: 0; /* Remove margin around the list */
+    display: block; /* Ensure the list items stack vertically */
+}
+
+.infowindow-container ul li {
+    display: block; /* Make each list item occupy a full line */
+    padding: 8px 0; /* Add spacing between items */
+    border: 1px solid #000000; /* Add a light separator between items */
+    border-radius: 5px; /* Add rounded corners to the list items */
+    margin-bottom: 5px; /* Add space between list items */
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.infowindow-container ul li strong {
+    color: #000; /* Bold titles should stand out */
+    font-weight: bold;
+    margin-right: 8px; /* Space between title and description */
+}
+
+.infowindow-container ul li p {
+    margin: 0; /* Remove default paragraph margins */
+    color: #555; /* Use a softer color for descriptions */
+}
+
+.not-edit-profile-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.not-edit-profile-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: #0000001a 8px 8px 10px; /* Add a subtle shadow */
+}
+
+.footer {
+    color: #585555;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-links .active-link {
+    background-color: #CD5C08;
+    color: white;
+  }

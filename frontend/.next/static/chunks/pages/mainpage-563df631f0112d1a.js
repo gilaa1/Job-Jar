@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[706],{2381:(_,n,e)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/mainpage",function(){return e(1352)}])}},_=>{var n=n=>_(_.s=n);_.O(0,[259,862,759,636,593,792],()=>n(2381)),_N_E=_.O()}]);
